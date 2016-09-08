@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:id="@+id/nombre"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Nombres del Lugar"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <!-- Tipo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo_tipo"
+                android:contentDescription="Logo del tipo"
+                android:src="@drawable/otros"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipo"
+                android:layout_gravity="bottom"
+                android:text="tipo del lugar"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+        <!-- Direccion -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo_direccion"
+                android:contentDescription="Logo Dirección"
+                android:src="@android:drawable/ic_menu_myplaces"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/direccion"
+                android:layout_gravity="bottom"
+                android:text="la direccion es..."
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+        <!-- Telefono -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo_telefono"
+                android:contentDescription="Logo Telefono"
+                android:src="@android:drawable/ic_menu_call"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/telefono"
+                android:layout_gravity="bottom"
+                android:text="555 - 000 000"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+        <!-- url -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo_url"
+                android:contentDescription="Logo URL"
+                android:src="@android:drawable/ic_menu_mapmode"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/url"
+                android:layout_gravity="bottom"
+                android:text="la URL es..."
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+        <!-- comentario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo_comentario"
+                android:contentDescription="Logo Comentario"
+                android:src="@android:drawable/ic_menu_info_details"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/comentario"
+                android:layout_gravity="bottom"
+                android:text="Este lugar es..."
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+        <!-- fecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo_fecha"
+                android:contentDescription="Logo Fecha"
+                android:src="@android:drawable/ic_menu_my_calendar"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fecha"
+                android:layout_gravity="bottom"
+                android:text="01/05/2016"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+        <!-- hora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo_hora"
+                android:contentDescription="Logo Hora"
+                android:src="@android:drawable/ic_menu_recent_history"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hora"
+                android:layout_gravity="bottom"
+                android:text="18:00"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/valoracion"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/foto"
+            android:rating="3"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="fotografía"
+                android:src="@drawable/foto_epsg"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="Logo cámara"
+                    android:src="@android:drawable/ic_menu_camera"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="Logo Galería"
+                    android:src="@android:drawable/ic_menu_gallery"/>
+            </LinearLayout>
+        </FrameLayout>
+        
+    </LinearLayout>
+
+</ScrollView>
